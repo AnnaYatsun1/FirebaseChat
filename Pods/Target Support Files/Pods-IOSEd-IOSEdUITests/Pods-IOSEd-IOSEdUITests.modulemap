@@ -1,0 +1,6 @@
+framework module Pods_IOSEd_IOSEdUITests {
+  umbrella header "Pods-IOSEd-IOSEdUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

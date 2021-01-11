@@ -1,0 +1,6 @@
+framework module Pods_IOSEd {
+  umbrella header "Pods-IOSEd-umbrella.h"
+
+  export *
+  module * { export * }
+}
