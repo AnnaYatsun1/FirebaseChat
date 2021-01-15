@@ -19,7 +19,10 @@ class ViewController: UIViewController {
         let play = UIBarButtonItem(title: "Play", style: .plain, target: self, action: #selector(playTapped))
         navigationItem.rightBarButtonItems = [play]
         let dataBase = DatabaseManager()
-        dataBase.writeMessage()
+        
+        
+        
+       // dataBase.writeMessage()
     }
 
     @objc

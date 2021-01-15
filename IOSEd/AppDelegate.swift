@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         window.rootViewController = view
         window.makeKeyAndVisible()
-   
         
         // Override point for customization after application launch.
         return true

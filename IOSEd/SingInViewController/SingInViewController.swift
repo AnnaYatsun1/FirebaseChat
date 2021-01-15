@@ -20,13 +20,9 @@ class SingInViewController: UIViewController, GIDSignInDelegate, ASAuthorization
     func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }
-//    var eventHandel: (Event) -> ()
-    
-    
-    @IBOutlet weak var singInStackView: UIStackView!
 
-    
-    
+    @IBOutlet weak var singInStackView: UIStackView!
+ 
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
           if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
@@ -40,31 +36,33 @@ class SingInViewController: UIViewController, GIDSignInDelegate, ASAuthorization
         let userId = user.userID                  // For client-side use only!
         let idToken = user.authentication.idToken // Safe to send to the server
         let accessToken = user.authentication.accessToken
+        
+        if user.profile.hasImage {
+            user.profile.imageURL(withDimension: 200)
+        }
+        
         let fullName = user.profile.name
         let givenName = user.profile.givenName
         let familyName = user.profile.familyName
         let email = user.profile.email
-        
-        guard  let id = idToken, let token = accessToken else { return }
-//        let credential = GoogleAuthProvider.credential(
-//            withIDToken: id,
-//            accessToken: token
-//        )
-        
+        let user = User(userId: userId, idToken: idToken, fullName: fullName, givenName: givenName, familyName: familyName, email: email)
+        let dataSource = DataMenegerSecond()
+        dataSource.write(with: user)
+        guard  let id = idToken, let token = accessToken else { return }        
         let creds = GoogleAuthProvider.credential(withIDToken: id, accessToken: token)
         Auth.auth().signIn(with: creds) { (authResult, error) in
-
             if let authResult = authResult {
-                let controller = UINavigationController(rootViewController: ViewController())
+                let controller = UINavigationController(rootViewController: UserListViewController())
                     //ViewController()
                 controller.modalPresentationStyle = .fullScreen
                 self.present(controller, animated: true) {
-                    
+                    let data = try? JSONEncoder().encode(user)
+                    UserDefaults.standard.set(data, forKey: "myUser")
                 }
             }
         }
         
-//        let user = User(userId: userId, idToken: idToken, fullName: fullName, givenName: givenName, familyName: familyName, email: email)
+
 //        Auth.auth().signIn(with: credential) { (authResult, error) in
 //
 //            print(authResult)
@@ -142,7 +140,7 @@ class SingInViewController: UIViewController, GIDSignInDelegate, ASAuthorization
 }
 
 
-struct User {
+struct User: Codable {
     let userId: String?                // For client-side use only!
     let idToken: String? // Safe to send to the server
     let fullName: String?

@@ -10,6 +10,14 @@
 		22E2B0F568F833EAE90D96DA /* Pods_IOSEd_IOSEdUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3EF8C56CDDEA223989F9F3 /* Pods_IOSEd_IOSEdUITests.framework */; };
 		9D1C814EE73CE22810E1E1C0 /* Pods_IOSEd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97885DA39B5EF257EC8DAB20 /* Pods_IOSEd.framework */; };
 		F40E6257387FCB14DB68ADFC /* Pods_IOSEdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3C55C2DBEB4EA3E95BAE88 /* Pods_IOSEdTests.framework */; };
+		F51CBED225B09F7900A104B6 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CBED025B09F7900A104B6 /* ChatTableViewCell.swift */; };
+		F51CBED325B09F7900A104B6 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51CBED125B09F7900A104B6 /* ChatTableViewCell.xib */; };
+		F51E801125B1B0EE007C3F3C /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E800F25B1B0EE007C3F3C /* UserTableViewCell.swift */; };
+		F51E801225B1B0EE007C3F3C /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51E801025B1B0EE007C3F3C /* UserTableViewCell.xib */; };
+		F51E801F25B1B3D0007C3F3C /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51E801D25B1B3D0007C3F3C /* UserListViewController.swift */; };
+		F51E802025B1B3D0007C3F3C /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51E801E25B1B3D0007C3F3C /* UserListViewController.xib */; };
+		F56C677B25ADAEF2009098A3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56C677925ADAEF2009098A3 /* ChatViewController.swift */; };
+		F56C677C25ADAEF2009098A3 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56C677A25ADAEF2009098A3 /* ChatViewController.xib */; };
 		F58937A925AC55560072D409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58937A825AC55560072D409 /* AppDelegate.swift */; };
 		F58937AD25AC55560072D409 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58937AC25AC55560072D409 /* ViewController.swift */; };
 		F58937B325AC55560072D409 /* IOSEd.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F58937B125AC55560072D409 /* IOSEd.xcdatamodeld */; };
@@ -50,6 +58,14 @@
 		9BF8AD550BC4C829F2D59EAC /* Pods-IOSEd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSEd.release.xcconfig"; path = "Target Support Files/Pods-IOSEd/Pods-IOSEd.release.xcconfig"; sourceTree = "<group>"; };
 		DA3EF8C56CDDEA223989F9F3 /* Pods_IOSEd_IOSEdUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSEd_IOSEdUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3C55C2DBEB4EA3E95BAE88 /* Pods_IOSEdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSEdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51CBED025B09F7900A104B6 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		F51CBED125B09F7900A104B6 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		F51E800F25B1B0EE007C3F3C /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		F51E801025B1B0EE007C3F3C /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		F51E801D25B1B3D0007C3F3C /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		F51E801E25B1B3D0007C3F3C /* UserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
+		F56C677925ADAEF2009098A3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		F56C677A25ADAEF2009098A3 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		F58937A525AC55560072D409 /* IOSEd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSEd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58937A825AC55560072D409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F58937AC25AC55560072D409 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +137,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F51CBECF25B09F6200A104B6 /* ChatCell */ = {
+			isa = PBXGroup;
+			children = (
+				F51CBED025B09F7900A104B6 /* ChatTableViewCell.swift */,
+				F51CBED125B09F7900A104B6 /* ChatTableViewCell.xib */,
+			);
+			path = ChatCell;
+			sourceTree = "<group>";
+		};
+		F51E800E25B1B0CC007C3F3C /* UserCell */ = {
+			isa = PBXGroup;
+			children = (
+				F51E800F25B1B0EE007C3F3C /* UserTableViewCell.swift */,
+				F51E801025B1B0EE007C3F3C /* UserTableViewCell.xib */,
+			);
+			path = UserCell;
+			sourceTree = "<group>";
+		};
+		F51E801C25B1B3A3007C3F3C /* UserListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F51E801D25B1B3D0007C3F3C /* UserListViewController.swift */,
+				F51E801E25B1B3D0007C3F3C /* UserListViewController.xib */,
+			);
+			path = UserListViewController;
+			sourceTree = "<group>";
+		};
+		F56C677825ADAEC6009098A3 /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F51CBECF25B09F6200A104B6 /* ChatCell */,
+				F56C677925ADAEF2009098A3 /* ChatViewController.swift */,
+				F56C677A25ADAEF2009098A3 /* ChatViewController.xib */,
+			);
+			path = ChatViewController;
+			sourceTree = "<group>";
+		};
 		F589379C25AC55560072D409 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +199,8 @@
 		F58937A725AC55560072D409 /* IOSEd */ = {
 			isa = PBXGroup;
 			children = (
+				F51E801C25B1B3A3007C3F3C /* UserListViewController */,
+				F56C677825ADAEC6009098A3 /* ChatViewController */,
 				F589381025AC635F0072D409 /* IOSEd.entitlements */,
 				F589380525AC5F030072D409 /* SingInViewController */,
 				F58937A825AC55560072D409 /* AppDelegate.swift */,
@@ -181,6 +236,7 @@
 		F589380525AC5F030072D409 /* SingInViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F51E800E25B1B0CC007C3F3C /* UserCell */,
 				F589380625AC5F220072D409 /* SingInViewController.swift */,
 				F589380725AC5F220072D409 /* SingInViewController.xib */,
 			);
@@ -298,8 +354,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F589380925AC5F220072D409 /* SingInViewController.xib in Resources */,
+				F51CBED325B09F7900A104B6 /* ChatTableViewCell.xib in Resources */,
 				F58937B825AC55570072D409 /* LaunchScreen.storyboard in Resources */,
+				F51E801225B1B0EE007C3F3C /* UserTableViewCell.xib in Resources */,
 				F589384025AC756B0072D409 /* GoogleService-Info.plist in Resources */,
+				F51E802025B1B3D0007C3F3C /* UserListViewController.xib in Resources */,
+				F56C677C25ADAEF2009098A3 /* ChatViewController.xib in Resources */,
 				F58937B525AC55570072D409 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +526,10 @@
 				F58937AD25AC55560072D409 /* ViewController.swift in Sources */,
 				F58937A925AC55560072D409 /* AppDelegate.swift in Sources */,
 				F58937B325AC55560072D409 /* IOSEd.xcdatamodeld in Sources */,
+				F51E801125B1B0EE007C3F3C /* UserTableViewCell.swift in Sources */,
+				F51E801F25B1B3D0007C3F3C /* UserListViewController.swift in Sources */,
+				F51CBED225B09F7900A104B6 /* ChatTableViewCell.swift in Sources */,
+				F56C677B25ADAEF2009098A3 /* ChatViewController.swift in Sources */,
 				F5B1F1A425AC9B920003E521 /* DataBaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
